@@ -55,9 +55,6 @@ function populateQuestions() {
         questionButtons.classList.add('question-buttons')
         questionBox.append(questionButtons)
 
-        const answerDisplay = document.createElement('div')
-        answerDisplay.classList.add('answer-display')
-
         question.options.forEach((option, optionIndex) => {
             const questionButton = document.createElement('button')
             questionButton.classList.add('question-button')
@@ -65,9 +62,13 @@ function populateQuestions() {
 
             questionButton.addEventListener('click', () => checkAnswer(questionBox, questionButton, option, optionIndex + 1, question.correct))
 
-            questionButtons.append(questionButton, answerDisplay)
+            questionButtons.append(questionButton)
         })
 
+        const answerDisplay = document.createElement('div')
+        answerDisplay.classList.add('answer-display')
+
+        questionBox.append(answerDisplay)
         questionDisplay.append(questionBox)
     })
 }
