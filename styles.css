@@ -1,0 +1,63 @@
+/* Styles */
+
+.app {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question-box {
+    background-color: rgb(21, 21, 21);
+    margin: 15px;
+    color: rgb(230, 230, 230);
+    padding: 15px;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.question-box h1 {
+    color: rgb(177, 136, 211);
+}
+
+.question-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(75, 134, 11);
+    color: rgb(255, 255, 255);
+}
+
+.question-button:disabled {
+    background-color: rgb(121, 121, 121);
+    color: rgb(230, 230, 230);
+}
+
+.answer-display {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-display.correct{
+    color: rgb(211, 211, 117)
+}
+
+.answer-display.wrong{
+    color: rgb(211, 134, 117)
+}
